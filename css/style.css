@@ -18,26 +18,31 @@ header p {
   background-color: yellow;
 }
 .sidebar {
-  border: 3px solid rgb(0, 208, 255);
+  /* border: 3px solid rgb(0, 208, 255); */
   padding: 20px;
+  background-color: blue;
+}
+.sidebar p {
+  color: white;
 }
 .main-content {
-  border: 3px solid rgb(4, 255, 0);
+  /* border: 3px solid rgb(4, 255, 0); */
   /* padding: 20px; */
   display: grid;
   gap: 10px;
   grid-template-rows: auto auto 1fr;
   grid-template-columns: auto auto 1fr;
   min-height: 30vh;
+  background-color: gray;
 }
 .main-content .sp1,
 .main-content .sp2 {
   max-height: 30vh;
 }
 body {
-  background-color: red;
+  /* background-color: red; */
   display: grid;
-  gap: 10px;
+  /* gap: 10px; */
   grid-template-rows: auto 1fr;
   grid-template-columns: auto 1fr;
   min-height: 100vh;
@@ -62,7 +67,22 @@ header {
   width: 20vw;
   height: 5vh;
   background-color: white;
+  border-left: 2px solid rgb(255, 197, 5);
+  border-radius: 6px;
 }
 /* .main-content div {
   margin-top: 10px;
 } */
+a {
+  color: white;
+  text-decoration-line: none;
+  margin-left: 10px;
+  font-size: large;
+}
+a:hover {
+  color: rgb(22, 9, 0);
+}
+.dashboard,
+.upper-content {
+  margin: 0 0 50px 0;
+}
