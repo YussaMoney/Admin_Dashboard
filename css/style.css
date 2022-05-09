@@ -1,0 +1,40 @@
+body {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+header {
+  border: 3px solid blue;
+  padding: 20px;
+}
+.sidebar {
+  border: 3px solid rgb(0, 208, 255);
+  padding: 20px;
+}
+.main-content {
+  border: 3px solid rgb(4, 255, 0);
+  padding: 20px;
+}
+body {
+  background-color: red;
+  display: grid;
+  gap: 10px;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: auto 1fr;
+  min-height: 100vh;
+  grid-template-areas:
+    "sidebar header"
+    "sidebar main-content";
+}
+header {
+  grid-area: header;
+  min-height: 15vh;
+}
+.sidebar {
+  grid-area: sidebar;
+  min-width: 15vw;
+}
+.main-content {
+  grid-area: main-content;
+}
