@@ -5,7 +5,7 @@ body {
   box-sizing: border-box;
 }
 header {
-  border: 3px solid blue;
+  /* border: 3px solid blue; */
   /* padding: 20px; */
   min-height: 15vh;
   display: grid;
@@ -15,7 +15,7 @@ header {
 }
 header p {
   margin: 0;
-  background-color: yellow;
+  /* background-color: yellow; */
 }
 .sidebar {
   /* border: 3px solid rgb(0, 208, 255); */
@@ -33,7 +33,7 @@ header p {
   grid-template-rows: auto auto 1fr;
   grid-template-columns: auto auto 1fr;
   min-height: 30vh;
-  background-color: gray;
+  background-color: rgba(128, 128, 128, 0.35);
 }
 .main-content .sp1,
 .main-content .sp2 {
@@ -69,6 +69,7 @@ header {
   background-color: white;
   border-left: 2px solid rgb(255, 197, 5);
   border-radius: 6px;
+  margin-top: 40px;
 }
 /* .main-content div {
   margin-top: 10px;
@@ -85,4 +86,78 @@ a:hover {
 .dashboard,
 .upper-content {
   margin: 0 0 50px 0;
+}
+header input {
+  border-radius: 10px;
+  margin: 15px 0 0 10px;
+  width: 40vw;
+  background-color: rgba(128, 128, 128, 0.45);
+}
+header i {
+  margin: 10px 0 0 10px;
+}
+.logo-content {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: auto;
+  align-items: center;
+  justify-items: center;
+}
+img {
+  height: 50px;
+  border-radius: 100px;
+}
+header a {
+  color: black;
+}
+header a:hover {
+  color: red;
+}
+.user-content {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: auto 1fr;
+  grid-template-areas:
+    "img hi"
+    "img name";
+  /* background-color: blue; */
+  margin: 10px;
+}
+.user-content img {
+  grid-area: img;
+  /* grid-column: span 2; */
+}
+.content {
+  grid-area: hi;
+}
+.name {
+  grid-area: name;
+}
+.other-header-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-row-gap: 10px;
+  margin: 10px;
+  justify-items: center;
+  align-items: center;
+}
+header .new,
+header .upload,
+header .share {
+  background-color: rgb(23, 34, 228);
+  /* max-width: 5vw; */
+  border-radius: 20px;
+  padding: 10px 40px 10px 40px;
+  /* max-height: 5vh; */
+}
+header .name {
+  /* background-color: green; */
+  margin-top: -30px;
+  font-weight: bolder;
+}
+header .content {
+  margin-top: 10px;
+  font-weight: bolder;
+  font-size: small;
 }
