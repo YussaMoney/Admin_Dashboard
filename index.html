@@ -60,16 +60,41 @@
 
     <main class="main-content">
       <h3 class="project">Your Projects</h3>
-      <p class="super-cool">stong</p>
-      <p class="imp-app">ppp</p>
-      <p class="ad">ppp</p>
-      <p class="less-cool">ppp</p>
-      <p class="easy-app">ppp</p>
-      <p class="mm">ppp</p>
+      <div class="super-cool">
+        <span>Super Cool Project</span>
+        In this section, we'll finish covering the whole range of HTML
+         so you'll be completely comfortable with putting the right elements in the right places
+          on a webpage.
+      </div>
+      <div class="imp-app">This section contains questions for you to check your understanding of this lesson.
+         If you’re having trouble answering the questions below on your own, 
+        review the material above to find the answer.
+      </div>
+      <div class="ad">For one-dimensional layouts, Flex offers a convenient tool
+         without having to rely on floats or CSS hacks to align your items properly
+      </div>
+      <div class="less-cool">Over the next few lessons we will cover CSS Grid and make page layouts much easier. 
+        First we’ll take a quick look back at Flexbox (remember Flexbox!?) and then learn about Grid
+      </div>
+      <div class="easy-app">A flex container is any element that has display: flex on it. 
+        A flex item is any element that lives directly inside of a flex container.
+      </div>
+      <div class="mm">This section contains a general overview of topics
+         that you will learn in this lesson.
+      </div>
       <h3 class="announce">Announcements</h3>
-      <p class="site">ppp</p>
+      <div class="site">The default value of the flex property is shown in the above screenshot: 
+        flex-grow: 0, flex-shrink: 1, flex-basis: 0%. Very often you see the flex shorthand defined with only one value. In that case, that value is applied to flex-grow, 
+        so when we put flex: 1 on our divs, we were actually specifying flex: 1 1 0%.
+      </div>
       <h3 class="trend">Trending</h3>
-      <p class="list">ppp</p>
+      <div class="list">flex-grow expects a single number as its value, 
+        and that number is used as the flex-item’s “growth factor”. 
+        When we applied flex: 1 to every div inside our container, 
+        we were telling every div to grow the same amount. The result of this is that every div ends up the exact same size. 
+        If we instead add 
+        flex: 2 to just one of the divs, then that div would grow to 2x the size of the others.
+      </div>
     </main>
   </body>
 </html>
