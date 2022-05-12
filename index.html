@@ -40,7 +40,7 @@
 
     <main class="sidebar">
       <p class="dashboard">
-        <i class="material-icons">dashboard</i><a href="#">Dashbord</a>
+        <i class="material-icons">dashboard</i><a href="#">Dashboard</a>
       </p>
       <div class="upper-content">
         <p><i class="material-icons">home</i><a href="#">Home</a></p>
@@ -59,42 +59,79 @@
     </main>
 
     <main class="main-content">
-      <h3 class="project">Your Projects</h3>
-      <div class="super-cool">
-        <span>Super Cool Project</span>
-        In this section, we'll finish covering the whole range of HTML
-         so you'll be completely comfortable with putting the right elements in the right places
-          on a webpage.
-      </div>
-      <div class="imp-app">This section contains questions for you to check your understanding of this lesson.
-         If you’re having trouble answering the questions below on your own, 
-        review the material above to find the answer.
-      </div>
-      <div class="ad">For one-dimensional layouts, Flex offers a convenient tool
-         without having to rely on floats or CSS hacks to align your items properly
-      </div>
-      <div class="less-cool">Over the next few lessons we will cover CSS Grid and make page layouts much easier. 
-        First we’ll take a quick look back at Flexbox (remember Flexbox!?) and then learn about Grid
-      </div>
-      <div class="easy-app">A flex container is any element that has display: flex on it. 
-        A flex item is any element that lives directly inside of a flex container.
-      </div>
-      <div class="mm">This section contains a general overview of topics
-         that you will learn in this lesson.
-      </div>
-      <h3 class="announce">Announcements</h3>
-      <div class="site">The default value of the flex property is shown in the above screenshot: 
-        flex-grow: 0, flex-shrink: 1, flex-basis: 0%. Very often you see the flex shorthand defined with only one value. In that case, that value is applied to flex-grow, 
-        so when we put flex: 1 on our divs, we were actually specifying flex: 1 1 0%.
-      </div>
-      <h3 class="trend">Trending</h3>
-      <div class="list">flex-grow expects a single number as its value, 
-        and that number is used as the flex-item’s “growth factor”. 
-        When we applied flex: 1 to every div inside our container, 
-        we were telling every div to grow the same amount. The result of this is that every div ends up the exact same size. 
-        If we instead add 
-        flex: 2 to just one of the divs, then that div would grow to 2x the size of the others.
-      </div>
+      <section class="grid-layout">
+        <h3 class="project">Your Projects</h3>
+          <div class="super-cool"><strong>Super Cool Project</strong>
+            <p>In this section, we'll finish covering the whole range of HTML
+            so you'll be completely comfortable with putting the right elements in the right places
+              on a webpage.
+            </p>
+          </div>
+
+          <div class="imp-app"><strong>Impossible App</strong>
+            <p>This section contains questions for you to check your understanding of this lesson.
+              If you’re having trouble answering the questions below on your own, 
+              review the material above to find the answer.
+            </p>
+          </div>
+
+          <div class="ad"><strong>Ad Blocker</strong>
+            <p>one-dimensional layouts, Flex offers a convenient tool
+              without having to rely on floats or CSS hacks to align your items properly
+            </p> 
+          </div>
+          <div class="less-cool"><strong>Less Cool Project</strong>
+            <p>Over the next few lessons we will cover CSS Grid and make page layouts much easier. 
+              First we’ll take a quick look back at Flexbox (remember Flexbox!?) and 
+              then learn about Grid.
+            </p>
+          </div>
+
+          <div class="easy-app"><strong>Easy Peasy App</strong>
+            <p>A flex container is any element that has display: flex on it. 
+              A flex item is any element that lives directly inside of a flex container.
+            </p>
+          </div>
+
+          <div class="mm"><strong>Money Maker</strong>
+            <p>This section contains a general overview of topics
+            that you will learn in this lesson.
+            </p>
+          </div>
+      </section>
+
+      <section class="flex-layout">
+        <h3 class="announce">Announcements</h3>
+          <div class="site">
+            <h4>Site Maintenance</h4>
+            <p>The default value of the flex property is shown in the above screenshot: 
+              flex-grow: 0, flex-shrink: 1, flex-basis: 0%. Very often you see the flex shorthand defined with only one value. In that case, that value is applied to flex-grow, 
+              so when we put flex: 1 on our divs, we were actually specifying flex: 1 1 0%.
+            </p><br><hr><br>
+            <h4>Community Share Day</h4>
+            <p>The default value of the flex property is shown in the above screenshot: 
+              flex-grow: 0, flex-shrink: 1, flex-basis: 0%. Very often you see the flex shorthand defined with only one value. In that case, that value is applied to flex-grow, 
+              so when we put flex: 1 on our divs, we were actually specifying flex: 1 1 0%.
+            </p><br><hr><br>
+            <h4>Updated Privacy Policy</h4>
+            <p>
+              The default value of the flex property is shown in the above screenshot: 
+            flex-grow: 0, flex-shrink: 1, flex-basis: 0%. Very often you see the flex shorthand defined with only one value. In that case, that value is applied to flex-grow, 
+            so when we put flex: 1 on our divs, we were actually specifying flex: 1 1 0%.
+            </p>
+
+          </div>
+
+        <h3 class="trend">Trending</h3>
+          <div class="list">flex-grow expects a single number as its value, 
+            and that number is used as the flex-item’s “growth factor”. 
+            When we applied flex: 1 to every div inside our container, 
+            we were telling every div to grow the same amount. The result of this is that every div ends up the exact same size. 
+            If we instead add 
+            flex: 2 to just one of the divs, then that div would grow to 2x the size of the others.
+          </div>
+      </section>
+
     </main>
   </body>
 </html>

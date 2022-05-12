@@ -1,3 +1,4 @@
+*,
 body {
   padding: 0;
   border: 0;
@@ -116,12 +117,13 @@ header p {
 }
 .sidebar {
   /* border: 3px solid rgb(0, 208, 255); */
-  padding: 20px;
+  padding: 30px;
   background-color: blue;
-  min-width: 15vw;
+  min-width: 20vw;
 }
 .sidebar p {
   color: white;
+  margin-top: 10px;
 }
 a {
   color: white;
@@ -137,35 +139,42 @@ a:hover {
   margin: 0 0 50px 0;
 }
 .main-content {
+  background-color: rgba(128, 128, 128, 0.35);
+  display: flex;
+  gap: 10px;
+  height: max-content;
+}
+.flex-layout hr {
+  color: gray;
+  /* overflow: visible; */
+  border: 1px solid;
+}
+.flex-layout {
+  flex: 1 1 auto;
+  flex-wrap: nowrap;
+  padding-top: 20px;
+}
+.grid-layout {
   /* border: 3px solid rgb(4, 255, 0); */
-  padding: 20px;
+  padding: 0px 10px 0px 20px;
+  padding-top: 0;
   display: grid;
   gap: 10px;
-  grid-template-rows: auto auto auto 1fr;
-  grid-template-columns: auto auto auto 1fr;
-  background-color: rgba(128, 128, 128, 0.35);
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto;
   grid-template-areas:
-    "project . announce"
-    "super-cool less-cool site"
-    "imp-app easy-app trend"
-    "ad mm list";
+    "project . "
+    "super-cool less-cool"
+    "imp-app easy-app"
+    "ad mm";
 }
-.main-content.project {
-  grid-area: project;
-}
-.main-content .announce {
-  grid-area: announce;
-  /* margin-left: 288px; */
+.project {
+  padding-top: 20px;
+  height: 30px;
 }
 .super-cool {
   grid-area: super-cool;
   border-left: 5px solid rgb(255, 197, 5);
-}
-.site {
-  grid-area: site;
-}
-.list {
-  grid-area: list;
 }
 .less-cool {
   grid-area: less-cool;
@@ -178,9 +187,6 @@ a:hover {
 .easy-app {
   grid-area: easy-app;
   border-left: 5px solid rgb(255, 197, 5);
-}
-.trend {
-  grid-area: trend;
 }
 .ad {
   grid-area: ad;
@@ -196,19 +202,11 @@ a:hover {
   /* max-width: 20vw; */
   background-color: white;
   border-radius: 6px;
-  padding: 10px;
+  padding: 20px;
 }
-.main-content div {
-  margin-top: 10px;
+.main-content div p {
+  margin: 0;
 }
-.main-content .super-cool,
-.main-content .less-cool,
-.main-content .site {
-  margin-top: -25px;
-}
-.main-content .list {
-  margin-top: -65px;
-}
-.main-content span {
-  font-weight: bolder;
+.announce {
+  height: 30px;
 }
